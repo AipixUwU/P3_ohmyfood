@@ -82,14 +82,15 @@ header #logo {
   position: relative;
   right: 35px;
 }
-.choice .choice_logo {
-  font-size: 25px;
-  color: gray;
-  margin-right: 30px;
-}
 .choice .choice_text {
-  font-size: 20px;
+  font-size: 16px;
   font-weight: 600;
+  position: relative;
+  right: 20px;
+}
+.choice i {
+  position: relative;
+  right: 25px;
 }
 
 /*# sourceMappingURL=styles.css.map */
