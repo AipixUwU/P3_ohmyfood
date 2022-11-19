@@ -9,7 +9,7 @@ header {
   justify-content: center;
   padding-top: 20px;
   padding-bottom: 10px;
-  box-shadow: 0px 4px 10px 0px rgba(148, 138, 148, 0.79);
+  box-shadow: 5px 5px 10px lightgray;
   margin-bottom: 4px;
 }
 header #logo {
@@ -65,7 +65,8 @@ header #logo {
 }
 .choice .choice_title {
   font-weight: 800;
-  font-size: 30px;
+  font-size: 20px;
+  margin-bottom: 30px;
 }
 .choice .choice_steps {
   padding: 30px 20px;
@@ -91,6 +92,44 @@ header #logo {
 .choice i {
   position: relative;
   right: 25px;
+}
+.choice .fa-sharp {
+  color: #9356dc;
+}
+
+.restaurants {
+  background: #f7f7f7;
+  padding-top: 50px;
+  display: flex;
+  flex-direction: column;
+}
+.restaurants .restaurants_title {
+  margin: 0 20px 20px 20px;
+  font-weight: 800;
+  font-size: 20px;
+}
+.restaurants .restaurants_menu {
+  border-radius: 20px;
+  margin: 0 20px;
+  background: white;
+  border-radius: 20px 20px 20px 20px;
+  box-shadow: 5px 5px 10px lightgray;
+}
+.restaurants .restaurants_img {
+  height: 140px;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 20px 20px 0 0;
+}
+.restaurants h2, .restaurants p {
+  margin: 0px;
+  padding-left: 10px;
+  font-size: 16px;
+}
+.restaurants h2 {
+  font-weight: 800;
+  margin-top: 7px;
+  margin-bottom: 3px;
 }
 
 /*# sourceMappingURL=styles.css.map */
