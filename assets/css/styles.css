@@ -1,4 +1,4 @@
-@import "root.css";
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap");
 body {
   margin: 0;
   font-family: "roboto", sans-serif;
@@ -81,7 +81,7 @@ header #logo {
   padding: 5px 10px;
   color: white;
   position: relative;
-  right: 35px;
+  right: 29px;
 }
 .choice .choice_text {
   font-size: 16px;
@@ -111,9 +111,11 @@ header #logo {
 .restaurants .restaurants_menu {
   border-radius: 20px;
   margin: 0 20px;
+  margin-bottom: 15px;
   background: white;
   border-radius: 20px 20px 20px 20px;
   box-shadow: 5px 5px 10px lightgray;
+  position: relative;
 }
 .restaurants .restaurants_img {
   height: 140px;
@@ -123,13 +125,54 @@ header #logo {
 }
 .restaurants h2, .restaurants p {
   margin: 0px;
-  padding-left: 10px;
   font-size: 16px;
+  padding-left: 10px;
 }
 .restaurants h2 {
   font-weight: 800;
   margin-top: 7px;
   margin-bottom: 3px;
+}
+.restaurants p {
+  padding-bottom: 10px;
+}
+.restaurants i {
+  position: absolute;
+  right: 10px;
+  bottom: 16px;
+  font-size: 25px;
+}
+.restaurants .restaurants_new {
+  position: absolute;
+  right: 12px;
+  top: 12px;
+  background: #99e2d0;
+  color: #269e80;
+  padding: 5px 7px;
+  border-radius: 3px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.footer_menu {
+  background: #353535;
+  padding: 30px 25px 15px 25px;
+  margin-top: 50px;
+}
+.footer_menu .footer_logo {
+  width: 100px;
+}
+.footer_menu ul {
+  list-style-type: none;
+  padding: 0;
+}
+.footer_menu li, .footer_menu a {
+  text-decoration: none;
+  color: white;
+  line-height: 30px;
+}
+.footer_menu i {
+  margin-right: 8px;
 }
 
 /*# sourceMappingURL=styles.css.map */
