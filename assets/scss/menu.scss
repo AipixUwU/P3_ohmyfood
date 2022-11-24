@@ -1,0 +1,21 @@
+@import "variables.scss";
+
+.nav_menu {
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+
+.nav_menu__logo {
+    height: 35px;
+}
+
+i {
+    font-size: 30px;
+    color: black;
+}
+
+.nav_menu__img {
+    display: none;
+}

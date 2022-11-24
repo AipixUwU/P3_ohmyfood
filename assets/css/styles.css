@@ -142,6 +142,10 @@ header #logo {
   bottom: 16px;
   font-size: 25px;
 }
+.restaurants a {
+  text-decoration: none;
+  color: black;
+}
 .restaurants .restaurants_new {
   position: absolute;
   right: 12px;
