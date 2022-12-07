@@ -165,6 +165,13 @@ header {
         right: 10px;
         bottom: 16px;
         font-size: 25px;
+        
+
+        &:hover {
+            opacity: 0;
+            transition: 0.5s;
+            background: $color-gradient;
+        }
     }
 
     a {

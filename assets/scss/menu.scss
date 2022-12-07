@@ -95,7 +95,8 @@ section {
             margin-top: 5px;
             font-size: 17px;
             padding-right: 55px;
-            max-width: 80%;
+            display: flex;
+            justify-content: space-between;
         
             .food_menu__price {
                 float: right;
@@ -125,7 +126,7 @@ section {
                 font-size: 25px;
                 position: absolute;
                 left: 20px;
-                bottom: 28px;
+                bottom: 25px;
                 color: white;
             }
         }
