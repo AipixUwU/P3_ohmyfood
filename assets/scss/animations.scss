@@ -1,0 +1,59 @@
+@import "variables.scss";
+@import "keyframes.scss";
+
+
+// LOADING
+
+.loader {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    background-color: #9356dc;
+    z-index: -10;
+    animation: loader 3s;
+    opacity: 0;
+    
+    h2 {
+        text-align: center;
+        color:white;
+        position: relative;
+        top:15%;
+        font-size: 40px;
+        text-transform: uppercase;  
+    }
+}
+
+// SPINNER
+
+.loader_spinner {
+    border-bottom: 2px solid #ff79da;
+    border-right: 2px solid #ff79da;
+    border-radius: 50px;
+    height: 60px;
+    width: 60px;
+    position: relative;
+    top: 25%;
+    margin: auto;
+    animation: spin 3s;
+    opacity: 0;
+}
+
+
+// MENU TRANSITION
+
+.food_menu__items {
+    animation: menu 1.5s;
+}
+
+
+.food_menu__check {
+    animation: check 1.5s;
+
+    i {
+        animation: rotate 1.5s;
+    }  
+}
+
+.food_menu__price {
+    animation: price 1.5s
+}
