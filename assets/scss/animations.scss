@@ -9,9 +9,9 @@
     width: 100%;
     position: fixed;
     background-color: #9356dc;
-    z-index: -10;
-    animation: loader 3s;
-    opacity: 0;
+    z-index: 1;
+    animation: loader 3s forwards linear;
+    opacity: 1;
     
     h2 {
         text-align: center;
@@ -45,15 +45,19 @@
     animation: menu 1.5s;
 }
 
+.food_menu__items {
 
-.food_menu__check {
-    animation: check 1.5s;
+    &:hover {
+        .food_menu__price {
+            animation: price 1.5s forwards;
+        }
 
-    i {
-        animation: rotate 1.5s;
-    }  
-}
-
-.food_menu__price {
-    animation: price 1.5s
+        .food_menu__check {
+            animation: check 1.5s forwards;
+        
+            i {
+                animation: rotate 1.5s;
+            }             
+        }
+    }
 }
