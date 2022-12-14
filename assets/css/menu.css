@@ -93,10 +93,10 @@
   animation: rotate 1.5s;
 }
 
-.food_menu .fa-solid, .restaurants .fa-solid {
+.food_menu__title .fa-solid, .restaurants .fa-solid {
   opacity: 0;
 }
-.food_menu .fa-solid:hover, .restaurants .fa-solid:hover {
+.food_menu__title .fa-solid:hover, .restaurants .fa-solid:hover {
   transition: 0.5s;
   opacity: 1;
   background: linear-gradient(180deg, #ff79da, #9356dc);
