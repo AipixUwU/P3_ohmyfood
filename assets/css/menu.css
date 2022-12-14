@@ -9,7 +9,7 @@
   }
   100% {
     opacity: 0;
-    z-index: 0;
+    z-index: -1;
   }
 }
 @keyframes spin {
@@ -55,8 +55,8 @@
   position: fixed;
   background-color: #9356dc;
   z-index: 1;
-  animation: loader 3s forwards linear;
   opacity: 1;
+  animation: loader 3s forwards linear;
 }
 .loader h2 {
   text-align: center;
@@ -83,7 +83,6 @@
 .food_menu__items {
   animation: menu 1.5s;
 }
-
 .food_menu__items:hover .food_menu__price {
   animation: price 1.5s forwards;
 }
@@ -92,6 +91,17 @@
 }
 .food_menu__items:hover .food_menu__check i {
   animation: rotate 1.5s;
+}
+
+.food_menu .fa-solid, .restaurants .fa-solid {
+  opacity: 0;
+}
+.food_menu .fa-solid:hover, .restaurants .fa-solid:hover {
+  transition: 0.5s;
+  opacity: 1;
+  background: linear-gradient(180deg, #ff79da, #9356dc);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 body {
@@ -140,6 +150,8 @@ body {
 .food_menu .food_menu__title i {
   margin-left: 40px;
   font-size: 30px;
+  position: absolute;
+  right: 25px;
 }
 .food_menu .food_menu__title h2 {
   font-family: "Shrikhand";
@@ -220,6 +232,7 @@ section .food_menu__items .food_menu__check i {
   padding: 20px 60px;
   font-size: 20px;
   font-weight: 600;
+  cursor: pointer;
 }
 
 .footer_menu {

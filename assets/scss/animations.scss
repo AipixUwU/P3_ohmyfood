@@ -10,14 +10,14 @@
     position: fixed;
     background-color: #9356dc;
     z-index: 1;
-    animation: loader 3s forwards linear;
     opacity: 1;
+    animation: loader 3s forwards linear;
     
     h2 {
         text-align: center;
         color:white;
         position: relative;
-        top:15%;
+        top: 15%;
         font-size: 40px;
         text-transform: uppercase;  
     }
@@ -38,14 +38,10 @@
     opacity: 0;
 }
 
-
 // MENU TRANSITION
 
 .food_menu__items {
     animation: menu 1.5s;
-}
-
-.food_menu__items {
 
     &:hover {
         .food_menu__price {
@@ -58,6 +54,22 @@
             i {
                 animation: rotate 1.5s;
             }             
+        }
+    }
+}
+
+// HEART
+
+.food_menu, .restaurants {
+    .fa-solid {
+        opacity: 0;
+        
+        &:hover {
+            transition: 0.5s;
+            opacity: 1;
+            background: $color-gradient;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
         }
     }
 }

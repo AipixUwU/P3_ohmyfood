@@ -9,7 +9,7 @@
   }
   100% {
     opacity: 0;
-    z-index: 0;
+    z-index: -1;
   }
 }
 @keyframes spin {
@@ -55,8 +55,8 @@
   position: fixed;
   background-color: #9356dc;
   z-index: 1;
-  animation: loader 3s forwards linear;
   opacity: 1;
+  animation: loader 3s forwards linear;
 }
 .loader h2 {
   text-align: center;
@@ -80,15 +80,28 @@
   opacity: 0;
 }
 
+.food_menu__items {
+  animation: menu 1.5s;
+}
+.food_menu__items:hover .food_menu__price {
+  animation: price 1.5s forwards;
+}
 .food_menu__items:hover .food_menu__check {
-  animation: check 1.5s;
+  animation: check 1.5s forwards;
 }
 .food_menu__items:hover .food_menu__check i {
   animation: rotate 1.5s;
 }
 
-.food_menu__price {
-  animation: price 1.5s;
+.food_menu .fa-solid, .restaurants .fa-solid {
+  opacity: 0;
+}
+.food_menu .fa-solid:hover, .restaurants .fa-solid:hover {
+  transition: 0.5s;
+  opacity: 1;
+  background: linear-gradient(180deg, #ff79da, #9356dc);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 body {
@@ -149,6 +162,7 @@ header #logo {
   padding: 15px 10px;
   box-shadow: 5px 5px 10px lightgray;
   margin-bottom: 60px;
+  cursor: pointer;
 }
 
 .choice {
