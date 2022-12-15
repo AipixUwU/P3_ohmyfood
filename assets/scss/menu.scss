@@ -84,6 +84,7 @@ section {
         padding: 15px 12px;
         margin-bottom: 20px;
         position: relative;
+        overflow: hidden;
 
         .food_menu__name {
             font-size: 18px;
@@ -121,8 +122,8 @@ section {
             background-color: #99E2D0;
             right: 0;
             top: 0;
+            width: 0;
             height: 100%;
-            // width: 70px;
             border-radius: 0 15px 15px 0;
 
             i {
@@ -130,7 +131,7 @@ section {
                 position: absolute;
                 left: 20px;
                 bottom: 25px;
-                color: white;
+                color: white;                
             }
         }
     }

@@ -11,7 +11,7 @@
     background-color: #9356dc;
     z-index: 1;
     opacity: 1;
-    animation: loader 3s forwards linear;
+    animation: loader 1.5s forwards linear;
     
     h2 {
         text-align: center;
@@ -50,7 +50,7 @@
 
         .food_menu__check {
             animation: check 1.5s forwards;
-        
+
             i {
                 animation: rotate 1.5s;
             }             

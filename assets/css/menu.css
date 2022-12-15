@@ -56,7 +56,7 @@
   background-color: #9356dc;
   z-index: 1;
   opacity: 1;
-  animation: loader 3s forwards linear;
+  animation: loader 1.5s forwards linear;
 }
 .loader h2 {
   text-align: center;
@@ -177,6 +177,7 @@ section .food_menu__items {
   padding: 15px 12px;
   margin-bottom: 20px;
   position: relative;
+  overflow: hidden;
 }
 section .food_menu__items .food_menu__name {
   font-size: 18px;
@@ -209,6 +210,7 @@ section .food_menu__items .food_menu__check {
   background-color: #99E2D0;
   right: 0;
   top: 0;
+  width: 0;
   height: 100%;
   border-radius: 0 15px 15px 0;
 }
