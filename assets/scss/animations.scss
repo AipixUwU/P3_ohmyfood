@@ -42,18 +42,24 @@
 
 .food_menu__items {
     animation: menu 1.5s;
+    
+    .food_menu__check {
+        transition: 1.5s;
+        width: 0;
+    }
+
+    .food_menu__price {
+        padding-right: 0;
+        transition: 1.5s;
+    }
 
     &:hover {
-        .food_menu__price {
-            animation: price 1.5s forwards;
-        }
-
+        .food_menu__price {      
+            padding-right: 45px;
+        } 
+        
         .food_menu__check {
-            animation: check 1.5s forwards;
-
-            i {
-                animation: rotate 1.5s;
-            }             
+            width: 70px;
         }
     }
 }
