@@ -53,14 +53,15 @@
         transition: 1.5s;
     }
 
-    &:hover {
-        .food_menu__price {      
-            padding-right: 45px;
-        } 
+    &:hover {      
         
         .food_menu__check {
             width: 70px;
         }
+
+        .food_menu__price {      
+            padding-right: 45px;
+        } 
     }
 }
 
