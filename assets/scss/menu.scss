@@ -148,7 +148,11 @@ section {
         padding: 20px 60px; 
         font-size: 20px;
         font-weight: 600; 
-        cursor: pointer;   
+        cursor: pointer; 
+          
+        &:hover{
+            background: linear-gradient(180deg, #f89ade, #9b6bd6);
+        }
     }
 }
 

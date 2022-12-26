@@ -67,6 +67,10 @@ header {
         box-shadow: $shadow; 
         margin-bottom: 60px;
         cursor: pointer;
+
+        &:hover{
+            background: linear-gradient(180deg, #f89ade, #9b6bd6);
+        }
     }
 }
 
@@ -87,6 +91,13 @@ header {
         margin: 10px 0;
         box-shadow: $shadow;
         border-radius: 30px;
+
+        &:hover {
+            background-color: #f5edff;
+            i {
+                color: #9356dc;
+            }
+        }
     }
 
     .choice_number {
@@ -108,10 +119,7 @@ header {
     i {
         position: relative;
         right: 25px;
-    }
-
-    .fa-sharp {
-        color: #9356dc;
+        color:#737373
     }
 }
 

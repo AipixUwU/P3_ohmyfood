@@ -231,6 +231,9 @@ section .food_menu__items .food_menu__check i {
   font-weight: 600;
   cursor: pointer;
 }
+.command_btn button:hover {
+  background: linear-gradient(180deg, #f89ade, #9b6bd6);
+}
 
 .footer_menu {
   background: #353535;

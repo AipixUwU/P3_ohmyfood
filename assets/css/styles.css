@@ -31,16 +31,6 @@
     transform: translateY(0px);
   }
 }
-@keyframes price {
-  100% {
-    padding-right: 45px;
-  }
-}
-@keyframes check {
-  100% {
-    width: 70px;
-  }
-}
 @keyframes rotate {
   100% {
     transform: rotate(360deg);
@@ -80,14 +70,22 @@
 .food_menu__items {
   animation: menu 1.5s;
 }
-.food_menu__items:hover .food_menu__price {
-  animation: price 1.5s forwards;
+.food_menu__items .food_menu__check {
+  transition: 1.5s;
+  width: 0;
+}
+.food_menu__items .food_menu__price {
+  padding-right: 0;
+  transition: 1.5s;
 }
 .food_menu__items:hover .food_menu__check {
-  animation: check 1.5s forwards;
+  width: 70px;
 }
 .food_menu__items:hover .food_menu__check i {
   animation: rotate 1.5s;
+}
+.food_menu__items:hover .food_menu__price {
+  padding-right: 45px;
 }
 
 .food_menu__title .fa-solid, .restaurants .fa-solid {
@@ -161,6 +159,9 @@ header #logo {
   margin-bottom: 60px;
   cursor: pointer;
 }
+.info .info_btn:hover {
+  background: linear-gradient(180deg, #f89ade, #9b6bd6);
+}
 
 .choice {
   padding: 0 20px;
@@ -177,6 +178,12 @@ header #logo {
   margin: 10px 0;
   box-shadow: 5px 5px 10px lightgray;
   border-radius: 30px;
+}
+.choice .choice_steps:hover {
+  background-color: #f5edff;
+}
+.choice .choice_steps:hover i {
+  color: #9356dc;
 }
 .choice .choice_number {
   background-color: #9356dc;
@@ -195,9 +202,7 @@ header #logo {
 .choice i {
   position: relative;
   right: 25px;
-}
-.choice .fa-sharp {
-  color: #9356dc;
+  color: #737373;
 }
 
 .restaurants {
