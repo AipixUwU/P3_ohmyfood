@@ -57,6 +57,9 @@
         
         .food_menu__check {
             width: 70px;
+            i {
+                animation: rotate 1.5s;
+            }
         }
 
         .food_menu__price {      
