@@ -99,6 +99,18 @@
   -webkit-text-fill-color: transparent;
 }
 
+@media screen and (min-width: 769px) {
+  .restaurants_container {
+    flex-direction: initial !important;
+    justify-content: space-around;
+  }
+  .restaurants_container .restaurants_menu {
+    width: 25%;
+  }
+  .restaurants_container .restaurants_menu img {
+    height: 200px !important;
+  }
+}
 body {
   margin: 0;
   font-family: "roboto", sans-serif;
@@ -215,8 +227,13 @@ header #logo {
   margin: 0 20px 20px 20px;
   font-weight: 800;
   font-size: 20px;
+  padding-left: 10px;
 }
-.restaurants .restaurants_menu {
+.restaurants .restaurants_container {
+  display: flex;
+  flex-direction: column;
+}
+.restaurants .restaurants_container .restaurants_menu {
   border-radius: 20px;
   margin: 0 20px;
   margin-bottom: 15px;
@@ -225,36 +242,36 @@ header #logo {
   box-shadow: 5px 5px 10px lightgray;
   position: relative;
 }
-.restaurants .restaurants_img {
+.restaurants .restaurants_container .restaurants_img {
   height: 140px;
   width: 100%;
   object-fit: cover;
   border-radius: 20px 20px 0 0;
 }
-.restaurants h2, .restaurants p {
+.restaurants .restaurants_container h2, .restaurants .restaurants_container p {
   margin: 0px;
   font-size: 16px;
   padding-left: 10px;
 }
-.restaurants h2 {
+.restaurants .restaurants_container h2 {
   font-weight: 800;
   margin-top: 7px;
   margin-bottom: 3px;
 }
-.restaurants p {
+.restaurants .restaurants_container p {
   padding-bottom: 10px;
 }
-.restaurants i {
+.restaurants .restaurants_container i {
   position: absolute;
   right: 10px;
   bottom: 16px;
   font-size: 25px;
 }
-.restaurants a {
+.restaurants .restaurants_container a {
   text-decoration: none;
   color: black;
 }
-.restaurants .restaurants_new {
+.restaurants .restaurants_container .restaurants_new {
   position: absolute;
   right: 12px;
   top: 12px;

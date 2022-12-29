@@ -1,5 +1,6 @@
 @import "variables.scss";
 @import "animations.scss";
+@import "responsive.scss";
 
 body {
     margin: 0;
@@ -134,64 +135,70 @@ header {
         margin: 0 20px 20px 20px;
         font-weight: 800;
         font-size: 20px;
-    }
-
-    .restaurants_menu {
-        border-radius: 20px;
-        margin: 0 20px;
-        margin-bottom: 15px;
-        background: white;
-        border-radius: 20px 20px 20px 20px;
-        box-shadow: $shadow;
-        position: relative;
-        
-    }
-
-    .restaurants_img {
-        height: 140px;
-        width: 100%;
-        object-fit: cover;
-        border-radius: 20px 20px 0 0;
-    }
-
-    h2, p{
-        margin: 0px;
-        font-size: 16px;
         padding-left: 10px;
     }
 
-    h2 {
-        font-weight: 800;
-        margin-top: 7px;
-        margin-bottom: 3px;
-    }
+    .restaurants_container {
+        display: flex;
+        flex-direction: column;
 
-    p {
-        padding-bottom: 10px;
-    }
+        .restaurants_menu {
+            border-radius: 20px;
+            margin: 0 20px;
+            margin-bottom: 15px;
+            background: white;
+            border-radius: 20px 20px 20px 20px;
+            box-shadow: $shadow;
+            position: relative;
+            
+        }
 
-    i {
-        position: absolute;
-        right: 10px;
-        bottom: 16px;
-        font-size: 25px;
-    }
+        .restaurants_img {
+            height: 140px;
+            width: 100%;
+            object-fit: cover;
+            border-radius: 20px 20px 0 0;
+        }
 
-    a {
-        text-decoration: none;
-        color: black;
-    }
+        h2, p{
+            margin: 0px;
+            font-size: 16px;
+            padding-left: 10px;
+        }
 
-    .restaurants_new {
-        position: absolute;
-        right: 12px;
-        top: 12px;
-        background: #99e2d0;
-        color: #269e80;
-        padding: 5px 7px;
-        border-radius: 3px;
-        font-size: 12px;
-        font-weight: 600;
+        h2 {
+            font-weight: 800;
+            margin-top: 7px;
+            margin-bottom: 3px;
+        }
+
+        p {
+            padding-bottom: 10px;
+        }
+
+        i {
+            position: absolute;
+            right: 10px;
+            bottom: 16px;
+            font-size: 25px;
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+        }
+
+        .restaurants_new {
+            position: absolute;
+            right: 12px;
+            top: 12px;
+            background: #99e2d0;
+            color: #269e80;
+            padding: 5px 7px;
+            border-radius: 3px;
+            font-size: 12px;
+            font-weight: 600;
+        }
     }
 }
 
